@@ -1,5 +1,4 @@
 # Profile
-"GitHub-based résumé and research overview"
 
 
 <p align="center">

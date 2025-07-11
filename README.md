@@ -6,7 +6,7 @@
   <img src="https://your-image-url.com/photo.jpg" width="150" height="150" style="border-radius: 50%" alt="Profile Photo"/>
 </p>
 
-<h2 align="center">장경석 (Jang Kyungseok)</h2>
+<h2 align="center">장경석 (Jang KyongSeok)</h2>
 
 <p align="center">
   📍 Seoul, South Korea &nbsp;&nbsp;|&nbsp;&nbsp;

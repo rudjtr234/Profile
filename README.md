@@ -4,9 +4,9 @@
   <img src="https://github.com/user-attachments/assets/4ef225e8-115c-44f9-8e01-a0d18f1f3397" alt="이력서 사진" width="200" />
 </p>
 
-                                                           ### 장경석 (Jang KyongSeok)
+                                            ### 장경석 (Jang KyongSeok)
 
-                                               📍 Seoul, South Korea   |   📧 wkrudtj95@gmail.com
+                              📍 Seoul, South Korea   |   📧 wkrudtj95@gmail.com
 
 ---
 

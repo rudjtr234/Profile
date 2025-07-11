@@ -62,9 +62,6 @@
 #### 📜 Certifications
 
 - **Certified Information and Communication Engineer** – Korea Radio Promotion Association (May 2022)  
-- **Korean History Proficiency Test (Level 1)** – National Institute of Korean History (Aug 2021)  
-- **Computer Literacy Level 2** – KCCI (Aug 2021)  
-- **Driver’s License (Class 2)** – Korea Road Traffic Authority (Jan 2017)  
 
 ---
 

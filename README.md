@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="https://your-image-url.com/photo.jpg" width="150" height="150" style="border-radius: 50%" alt="Profile Photo"/>
+  ![이력서 사진](https://github.com/user-attachments/assets/4ef225e8-115c-44f9-8e01-a0d18f1f3397)
 </p>
 
 <h2 align="center">장경석 (Jang KyongSeok)</h2>

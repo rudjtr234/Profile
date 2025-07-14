@@ -77,8 +77,6 @@
 
 ### 📝 Publications
 
-> **[해당 항목은 요청에 따라 원문(영문) 그대로 유지합니다]**
-
 #### 📘 International Journals (SCI / SCIE)
 
 - **[A Study on the Lightweight and Fast Response GRU Techniques for Indoor Continuous Motion Recognition Based on Wi-Fi CSI]**  

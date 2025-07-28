@@ -80,7 +80,7 @@
 #### 📘 International Journals (SCI / SCIE)
 
 - **[A Study on the Lightweight and Fast Response GRU Techniques for Indoor Continuous Motion Recognition Based on Wi-Fi CSI]**  
-  *IEEE Access* (2025) – [Citations: 1]
+  *IEEE Access* (2025) – [Citations: 2]
 
 - **[Human Activity Recognition Based on Continuous-Wave Radar and Bi-directional Gated Recurrent Units]**  
   *Electronics*, 12(19), 4060 (2023) – [Citations: 6]

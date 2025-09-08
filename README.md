@@ -18,36 +18,31 @@
 
 ---
 
-####📄 CV / Resume
-###🧑‍💻 Experience
+#### 📄 CV / Resume
 
-AI Research Engineer
-MTS Company, R&D Team – Seoul, Korea
-Jan 2025 – Present
+### 🧑‍💻 Experience  
 
-Multimodal AI Development (LLaVA-Med, MedGemma)
+**AI Research Engineer**  
+**MTS Company, R&D Team – Seoul, Korea**  
+*Jan 2025 – Present*  
 
-Designed and deployed multimodal AI pipelines integrating pathology images (H&E thumbnails) with expert-written reports, improving diagnostic automation
+- **Multimodal AI Development (LLaVA-Med, MedGemma)**  
+  - Designed and deployed multimodal AI pipelines integrating pathology images (H&E thumbnails) with expert-written reports, improving diagnostic automation  
+  - Fine-tuned LLaVA-Med and MedGemma on 7,000+ TIFF slides, achieving **12th place worldwide and 3rd in Korea (1st Seoul National University, 2nd LG Electronics)** at the REG_2025 international challenge  
+  - Built large-scale image-captioning QA models for breast cancer pathology, enabling automated slide-level pathology reporting  
 
-Fine-tuned LLaVA-Med and MedGemma on 7,000+ TIFF slides, achieving 12th place worldwide and 3rd in Korea (behind Seoul National University and LG Electronics) at the REG_2025 international challenge
+- **Tile-RAG & LNMP KNN Retrieval**  
+  - Developed Tile-RAG pipeline for breast cancer lymph node metastasis prediction (LNMP)  
+  - Implemented UNI2-h embedding + FAISS k-NN retrieval with quantile thresholding (τ=99.99%) and 5-NN majority voting for robust non-metastasis classification  
+  - Conducted experiments on 300+ WSI slides, achieving improved specificity while maintaining high recall  
+  - Designed visualization overlays (WSI-level heatmaps) for interpretability in pathology AI systems  
 
-Built large-scale image-captioning QA models for breast cancer pathology, enabling automated slide-level pathology reporting
+- **Research & Proposal Writing**  
+  - Authored and presented national R&D proposals (NIPA – Feb 2025, Jeonbuk Techno Park – May 2025), including demos and technical presentations  
 
-Tile-RAG & LNMP KNN Retrieval
+---
 
-Developed Tile-RAG pipeline for breast cancer lymph node metastasis prediction (LNMP)
-
-Implemented UNI2-h embedding + FAISS k-NN retrieval, introducing thresholding (quantile τ=99.99%) + majority voting (5-NN) for robust non-metastasis classification
-
-Conducted experiments on 300+ WSI slides, achieving improved specificity while maintaining high recall
-
-Designed visualization overlays (WSI-level heatmaps) for interpretability in pathology AI systems
-
-Research & Proposal Writing
-
-Authored and presented national R&D proposals (NIPA – Feb 2025, Jeonbuk Techno Park – May 2025), including demos and technical presentations
-
-#### 🎓 Education
+#### 🎓 Education  
 
 **M.S. in Electronic Engineering**  
 **Kwangwoon University, Graduate School**  
@@ -64,23 +59,23 @@ Authored and presented national R&D proposals (NIPA – Feb 2025, Jeonbuk Techno
 
 ---
 
-#### 🛠️ Skills & Tools
+#### 🛠️ Skills & Tools  
 
 - **Deep Learning**: PyTorch, TensorFlow, torchvision, torchaudio  
-- **Vision-Language Models**: LLaVA, MedGemma, LangChain, Transformers  
+- **Vision-Language Models**: LLaVA, MedGemma, Transformers  
 - **Image Processing**: OpenSlide, Pillow, NumPy, Pandas  
 - **Deployment**: Docker, Flask, Conda, Git  
 - **R&D Planning**: Technical proposal writing, evaluation support, challenge participation  
 
 ---
 
-#### 📜 Certifications
+#### 📜 Certifications  
 
 - **Certified Information and Communication Engineer** – Korea Radio Promotion Association (May 2022)  
 
 ---
 
-#### 🏆 Awards
+#### 🏆 Awards  
 
 - **Dean's List – Wonkwang Honors Club (2022)**  
   - Selected as top performer by academic department; given priority for seminars and self-development programs  
@@ -90,48 +85,24 @@ Authored and presented national R&D proposals (NIPA – Feb 2025, Jeonbuk Techno
 
 ---
 
-### 📝 Publications
+### 📝 Publications  
 
-#### 📘 International Journals (SCI / SCIE)
+#### 📘 International Journals (SCI / SCIE)  
+- *A Study on the Lightweight and Fast Response GRU Techniques for Indoor Continuous Motion Recognition Based on Wi-Fi CSI*, **IEEE Access** (2025) – [Citations: 2]  
+- *Human Activity Recognition Based on Continuous-Wave Radar and Bi-directional Gated Recurrent Units*, **Electronics**, 12(19), 4060 (2023) – [Citations: 6]  
+- *Intelligent Mesh Cluster Algorithm for Device-Free Localization in Wireless Sensor Networks*, **Electronics**, 12(16), 3426 (2023) – [Citations: 4]  
+- *Indoor Localization Based on Wi-Fi, Geomagnetic, and Light Sensors on Android Device Using DFF*, **Electronics**, 12(24), 5032 (2023) – [Citations: 2]  
 
-- **[A Study on the Lightweight and Fast Response GRU Techniques for Indoor Continuous Motion Recognition Based on Wi-Fi CSI]**  
-  *IEEE Access* (2025) – [Citations: 2]
+#### 📙 Domestic Journals (KCI)  
+- *Posture Estimation for Untrained Persons Using a 24GHz FMCW Radar and 2D CNN*, **Journal of the Society of Disaster Information**, 19(4), pp.897–907 (2023) – [Citations: 3]  
+- *Indoor Fall Detection Using Wi-Fi CSI and LSTM-Attention*, **Journal of the Society of Disaster Information**, 20(4), pp.935–945 (2024)  
 
-- **[Human Activity Recognition Based on Continuous-Wave Radar and Bi-directional Gated Recurrent Units]**  
-  *Electronics*, 12(19), 4060 (2023) – [Citations: 6]
-
-- **[Intelligent Mesh Cluster Algorithm for Device-Free Localization in Wireless Sensor Networks]**  
-  *Electronics*, 12(16), 3426 (2023) – [Citations: 4]
-
-- **[Indoor Localization Based on Wi-Fi, Geomagnetic, and Light Sensors on Android Device Using DFF]**  
-  *Electronics*, 12(24), 5032 (2023) – [Citations: 2]
-
----
-
-#### 📙 Domestic Journals (KCI)
-
-- **[Posture Estimation for Untrained Persons Using a 24GHz FMCW Radar and 2D CNN]**  
-  *Journal of the Society of Disaster Information*, 19(4), pp.897–907 (2023) – [Citations: 3]
-
-- **[Indoor Fall Detection Using Wi-Fi CSI and LSTM-Attention]**  
-  *Journal of the Society of Disaster Information*, 20(4), pp.935–945 (2024)
+#### 📗 Conference Proceedings  
+- *Estimation of Lying Postures at Multiple Angles Using FMCW Radar-Based CNNs*, **Korean Society of Disaster Information Conference**, pp.349–350 (2023)  
+- *Device-Free Human Activity Recognition: SVM-Based Wi-Fi CSI Analysis*, **KICS Conference Proceedings**, pp.991–992 (2024)  
+- *Device-Free Human Motion Detection using Wi-Fi CSI in Indoor Environment*, **KICS Conference Proceedings**, pp.153–154 (2023)  
 
 ---
 
-#### 📗 Conference Proceedings
-
-- **[Estimation of Lying Postures at Multiple Angles Using FMCW Radar-Based CNNs]**  
-  *Korean Society of Disaster Information Conference*, pp.349–350 (2023)
-
-- **[Device-Free Human Activity Recognition: SVM-Based Wi-Fi CSI Analysis]**  
-  *KICS Conference Proceedings*, pp.991–992 (2024)
-
-- **[Device-Free Human Motion Detection using Wi-Fi CSI in Indoor Environment]**  
-  *KICS Conference Proceedings*, pp.153–154 (2023)
-
----
-
-### 🔗 Links
-
+### 🔗 Links  
 📂 [My Projects](https://github.com/rudjtr234?tab=repositories)  
-

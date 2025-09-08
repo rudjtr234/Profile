@@ -18,19 +18,22 @@
 
 ---
 
-### 📄 CV / Resume
+#### 📄 CV / Resume
+### 🧑‍💻 Experience
 
-#### 🧑‍💻 Experience
+AI Research Engineer
+MTS Company, R&D Team – Seoul, Korea
+Jan 2025 – Present
 
-**AI Research Engineer**  
-**MTS Company, R&D Team – Seoul, Korea**  
-*Jan 2025 – Present*
+Designed and deployed multimodal AI pipelines integrating pathology images (H&E thumbnails) with expert-written reports, improving diagnostic automation
 
-- Developed multimodal AI models combining pathology images (H&E thumbnails) with expert-written pathology reports  
-- Participated in REG_2025 challenge; fine-tuned LLaVA-Med and MedGemma on 7,000 TIFF slides  
-- Built large-scale image-captioning QA models for breast cancer pathology  
-- Researched integration of in-house AI models via LangChain for unified LLM interface  
-- Drafted national R&D proposals for NIPA (Feb 2025) and Jeonbuk Techno Park (May 2025), including demo and presentation  
+Fine-tuned LLaVA-Med and MedGemma on 7,000+ TIFF slides, achieving 12th place worldwide and 3rd in Korea (behind Seoul National University and LG Electronics) at the REG_2025 international challenge
+
+Built large-scale image-captioning QA models for breast cancer pathology, enabling automated slide-level pathology reporting
+
+Developed k-NN retrieval algorithm (UNI2-h, FAISS) for lymph node metastasis prediction (LNMP), introducing thresholding + majority voting for robust non-metastasis classification
+
+Authored and presented national R&D proposals (NIPA – Feb 2025, Jeonbuk Techno Park – May 2025), including demos and technical presentations
 
 #### 🎓 Education
 

@@ -26,19 +26,25 @@
 **MTS Company, R&D Team – Seoul, Korea**  
 *Jan 2025 – Present*  
 
-- **Multimodal AI Development (LLaVA-Med, MedGemma)**  
-  - Designed and deployed multimodal AI pipelines integrating pathology images (H&E thumbnails) with expert-written reports, improving diagnostic automation  
-  - Fine-tuned LLaVA-Med and MedGemma on 7,000+ TIFF slides, achieving **12th place worldwide and 3rd in Korea (1st Seoul National University, 2nd LG Electronics)** at the REG_2025 international challenge  
-  - Built large-scale image-captioning QA models for breast cancer pathology, enabling automated slide-level pathology reporting  
+- **Tile-RAG (REG_2025 Challenge)**  
+  - Developed **Tile-RAG pipeline** for breast cancer pathology report automation  
+  - Workflow: WSI tiling → UNI2-h embedding → ChromaDB vector indexing → k-NN retrieval → caption/QA generation  
+  - Built large-scale image–caption QA model for breast cancer pathology  
+  - **Achieved 12th place worldwide and 3rd in Korea (1st Seoul National University, 2nd LG Electronics)** at the **REG_2025 international challenge**  
 
-- **Tile-RAG & LNMP KNN Retrieval**  
-  - Developed Tile-RAG pipeline for breast cancer lymph node metastasis prediction (LNMP)  
-  - Implemented UNI2-h embedding + FAISS k-NN retrieval with quantile thresholding (τ=99.99%) and 5-NN majority voting for robust non-metastasis classification  
-  - Conducted experiments on 300+ WSI slides, achieving improved specificity while maintaining high recall  
-  - Designed visualization overlays (WSI-level heatmaps) for interpretability in pathology AI systems  
+- **LNMP KNN Retrieval (Research Project)**  
+  - Designed and implemented **k-NN retrieval algorithm** for lymph node metastasis prediction (LNMP)  
+  - Used **UNI2-h embedding + FAISS k-NN** with quantile thresholding (τ=99.99%) and **5-NN majority voting**  
+  - Conducted experiments on **300+ WSI slides**, achieving improved specificity while maintaining recall  
+  - Built **WSI-level overlay heatmaps** for interpretability in pathology AI  
+
+- **Multimodal AI Development (LLaVA-Med, MedGemma)**  
+  - Researched multimodal AI pipelines integrating pathology images with expert-written reports  
+  - Fine-tuned LLaVA-Med and MedGemma on internal datasets for **pathology captioning & QA** prototypes  
+  - Built experimental VLM-based pathology report automation systems  
 
 - **Research & Proposal Writing**  
-  - Authored and presented national R&D proposals (NIPA – Feb 2025, Jeonbuk Techno Park – May 2025), including demos and technical presentations  
+  - Authored and presented **national R&D proposals** (NIPA – Feb 2025, Jeonbuk Techno Park – May 2025), including **demo systems** and **technical presentations**  
 
 ---
 

@@ -32,8 +32,8 @@
 - 사내 LLM 모델 통합을 위한 LangChain 기반 시스템 설계 및 검증  
 - 2025년 NIPA, 전북테크노파크 R&D 제안서 기획 및 발표 자료 작성
 - Tile-RAG 파이프라인 설계 및 구현: WSI 타일링 → UNI2-h 임베딩 → 벡터DB(ChromaDB) → k-NN 검색 기반 리포트 자동화 시스템 구축
--LNMP KNN Retrieval 연구: UNI2-h + FAISS 기반 τ-Quantile(99.99%) 임계치 및 5-NN 다수결 투표 기법 적용, 300장 이상의 WSI 실험을 통해 재현율 유지와 특이도 개선 달성
--WSI Heatmap 해석 도구 개발: 슬라이드 단위 전이 여부 시각화를 통한 병리 AI의 해석 가능성 향상
+- LNMP KNN Retrieval 연구: UNI2-h + FAISS 기반 τ-Quantile(99.99%) 임계치 및 5-NN 다수결 투표 기법 적용, 300장 이상의 WSI 실험을 통해 재현율 유지와 특이도 개선 달성
+- WSI Heatmap 해석 도구 개발: 슬라이드 단위 전이 여부 시각화를 통한 병리 AI의 해석 가능성 향상
 
 
 #### 🎓 학력

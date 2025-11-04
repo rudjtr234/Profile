@@ -125,10 +125,10 @@
 ### 📝 논문 및 학술 활동  
 
 #### 📘 국제 학술지 (SCI / SCIE)  
-- *A Study on the Lightweight and Fast Response GRU Techniques for Indoor Continuous Motion Recognition Based on Wi-Fi CSI*, **IEEE Access** (2025) – [인용 2회]  
-- *Human Activity Recognition Based on Continuous-Wave Radar and Bi-directional Gated Recurrent Units*, **Electronics**, 12(19), 4060 (2023) – [인용 6회]  
-- *Intelligent Mesh Cluster Algorithm for Device-Free Localization in Wireless Sensor Networks*, **Electronics**, 12(16), 3426 (2023) – [인용 4회]  
-- *Indoor Localization Based on Wi-Fi, Geomagnetic, and Light Sensors on Android Device Using DFF*, **Electronics**, 12(24), 5032 (2023) – [인용 2회]  
+- *A Study on the Lightweight and Fast Response GRU Techniques for Indoor Continuous Motion Recognition Based on Wi-Fi CSI*, **IEEE Access** (2025) – [인용 3회]  
+- *Human Activity Recognition Based on Continuous-Wave Radar and Bi-directional Gated Recurrent Units*, **Electronics**, 12(19), 4060 (2023) – [인용 7회]  
+- *Intelligent Mesh Cluster Algorithm for Device-Free Localization in Wireless Sensor Networks*, **Electronics**, 12(16), 3426 (2023) – [인용 5회]  
+- *Indoor Localization Based on Wi-Fi, Geomagnetic, and Light Sensors on Android Device Using DFF*, **Electronics**, 12(24), 5032 (2023) – [인용 4회]  
 
 #### 📙 국내 학술지 (KCI)  
 - *Posture Estimation for Untrained Persons Using a 24GHz FMCW Radar and 2D CNN*, **한국재난정보학회지**, 19(4), pp.897–907 (2023) – [인용 3회]  

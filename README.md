@@ -44,7 +44,7 @@
   - Used **UNI2-h embedding + FAISS k-NN** with quantile thresholding (τ=99.99%) and **5-NN majority voting**  
   - Conducted experiments on **300+ WSI slides**, achieving improved specificity while maintaining recall  
   - Built **WSI-level overlay heatmaps** for interpretability in pathology AI
-  - 
+    
 - **Multimodal AI Development (LLaVA-Med, MedGemma)** 
   - Researched multimodal AI pipelines integrating pathology images with expert-written reports  
   - Fine-tuned LLaVA-Med and MedGemma on internal datasets for **pathology captioning & QA** prototypes  

@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/4ef225e8-115c-44f9-8e01-a0d18f1f3397" alt="이력서 사진" width="200" />
+<img src="https://github.com/user-attachments/assets/4ef225e8-115c-44f9-8e01-a0d18f1f3397" alt="Profile Photo" width="200" />
 
-### 장경석 (Jang KyongSeok)  
+### Jang KyongSeok (장경석)  
 📍 Seoul, South Korea | 📧 wkdrudtjr95@gmail.com  
 
 </div>
@@ -11,47 +11,70 @@
 
 ### 👋 About Me
 🧠 AI Developer specializing in Deep Learning & Medical Image Analysis  
-🧪 Passionate about building real-world healthcare AI applications  
-🛠️ Experienced in Python, PyTorch, TensorFlow, Flask  
-🌱 Continuously learning about Vision-Language Models and Medical Pathology AI  
-📝 Loves translating research into practical systems  
+🧪 Passionate about developing real-world AI systems for healthcare and pathology  
+🛠️ Proficient in Python, PyTorch, TensorFlow, and Flask for end-to-end AI pipelines  
+🌱 Continuously exploring Vision-Language Models and Digital Pathology AI  
+📝 Interested in translating research into deployable, impactful systems  
 
 ---
 
-#### 📄 CV / Resume
+### 📄 CV / Resume  
 
 ### 🧑‍💻 Experience  
 
 **AI Research Engineer**  
-**MTS Company, R&D BIO-DT(Develop Team) – Seoul, Korea**  
+**MTS Company, R&D BIO-DT (Develop Team) – Seoul, South Korea**  
 *Jan 2025 – Present*  
 
-- **Thyroid Mutation Prediction Model (BRAF Classification)**
-  - Developed an AI model predicting BRAF V600E mutation in thyroid cancer using H&E WSI pathology images (5000 WSI)
-  - Built a full pipeline: WSI tiling → UNI2-h embedding (1536-dim) → ABMIL classifier (attention-based MIL)
-  - Achieved **AUC 0.89 ± 0.04 and F1-score 0.85 ± 0.05** across 5-fold validation (Bag size = 500–5000)
-  - Designed visualization module for attention heatmaps, highlighting mutation-associated tissue regions
-  - Contributed to the company’s precision pathology initiative for low-cost, non-invasive gene mutation screening
+---
 
-- **Tile-RAG (REG_2025 Challenge)**  
-  - Developed **Tile-RAG pipeline** for breast cancer pathology report automation  
-  - Workflow: WSI tiling → UNI2-h embedding → ChromaDB vector indexing → k-NN retrieval → caption/QA generation  
-  - Built large-scale image–caption QA model for breast cancer pathology  
-  - **Achieved 12th place worldwide and 3rd in Korea (1st Seoul National University, 2nd LG Electronics)** at the **REG_2025 international challenge**  
+#### 🧬 Thyroid Mutation Prediction Model (Research Project)  
+📅 *Oct 2025 – Present*  
 
-- **LNMP KNN Retrieval (Research Project)**  
-  - Designed and implemented **k-NN retrieval algorithm** for lymph node metastasis prediction (LNMP)  
-  - Used **UNI2-h embedding + FAISS k-NN** with quantile thresholding (τ=99.99%) and **5-NN majority voting**  
-  - Conducted experiments on **300+ WSI slides**, achieving improved specificity while maintaining recall  
-  - Built **WSI-level overlay heatmaps** for interpretability in pathology AI
-    
-- **Multimodal AI Development (LLaVA-Med, MedGemma)** 
-  - Researched multimodal AI pipelines integrating pathology images with expert-written reports  
-  - Fine-tuned LLaVA-Med and MedGemma on internal datasets for **pathology captioning & QA** prototypes  
-  - Built experimental VLM-based pathology report automation systems  
+- Developed an **AI model for predicting BRAF V600E mutation** in thyroid cancer using H&E WSI pathology images (5,000 WSIs)  
+- Built a full pipeline: **WSI tiling → UNI2-h embedding (1536-dim) → ABMIL classifier (attention-based MIL)**  
+- Achieved **AUC 0.89 ± 0.04 and F1-score 0.85 ± 0.05** across 5-fold validation (Bag size = 500–5000)  
+- Designed **attention heatmap visualization** module highlighting mutation-associated tissue regions  
+- Contributed to the company’s **precision pathology AI** initiative for low-cost, non-invasive genetic screening  
 
-- **Research & Proposal Writing**  
-  - Authored and presented **national R&D proposals** (NIPA – Feb 2025, Jeonbuk Techno Park – May 2025), including **demo systems** and **technical presentations**  
+---
+
+#### 🧠 LNMP KNN Retrieval (Research Project)  
+📅 *Aug 2025 – Oct 2025*  
+
+- Designed and implemented a **k-NN retrieval algorithm for lymph node metastasis prediction (LNMP)**  
+- Utilized **UNI2-h embeddings + FAISS k-NN** with **quantile thresholding (τ=99.99%)** and **5-NN majority voting**  
+- Conducted experiments on **300+ WSI slides**, improving specificity while maintaining recall  
+- Built **WSI-level overlay heatmaps** for better interpretability in pathology AI  
+
+---
+
+#### 🧩 Tile-RAG (REG_2025 Challenge)  
+📅 *Jun 2025 – Aug 2025*  
+
+- Developed the **Tile-RAG pipeline** for breast cancer pathology report automation  
+- Workflow: **WSI tiling → UNI2-h embedding → ChromaDB vector indexing → k-NN retrieval → caption/QA generation**  
+- Built and trained a large-scale **image–caption QA model** for pathology  
+- **Achieved 12th place globally and 3rd in Korea (1st Seoul National University, 2nd LG Electronics)** in the **REG_2025 international challenge**  
+
+---
+
+#### 🧬 Multimodal AI Development (LLaVA-Med, MedGemma)  
+📅 *Jan 2025 – May 2025*  
+
+- Researched **multimodal AI pipelines** integrating pathology images and expert-written reports  
+- Fine-tuned **LLaVA-Med** and **MedGemma** models on internal pathology datasets  
+- Built **VLM-based prototypes** for automatic pathology report generation  
+
+---
+
+#### 🧾 Research & Proposal Writing  
+📅 *Jan 2025 – May 2025*  
+
+- Authored and presented **national R&D proposals**:  
+  - **NIPA (Feb 2025)**  
+  - **Jeonbuk Technopark (May 2025)**  
+- Built demo systems and conducted **technical presentations** for AI-based pathology platforms  
 
 ---
 
@@ -62,23 +85,23 @@
 *Mar 2022 – Feb 2024*  
 - GPA: 4.5 / 4.5  
 - Thesis: *“Indoor Human Activity Recognition using Wi-Fi CSI and FMCW Radar with Deep Learning”*  
-- Publications: 1 KCI-indexed journal paper, 3 domestic conferences, 1 IEEE Access (SCI) accepted  
+- Publications: 1 KCI-indexed journal paper, 3 domestic conferences, 1 SCI(E) paper (IEEE Access)  
 
 **B.S. in Information & Communication Engineering**  
 **Wonkwang University**  
 *Mar 2017 – Feb 2021*  
 - GPA: 4.07 / 4.5  
-- Awards: Dean’s List, Creative Capstone Design Competition Award  
+- Awards: Dean’s List (Honors Club), Creative Capstone Design Competition Award  
 
 ---
 
 #### 🛠️ Skills & Tools  
 
-- **Deep Learning & Machine Learning**: PyTorch, TensorFlow, Scikit-learn, torchvision, torchaudio
-- **Vision-Language Models**: Image analysis, vision-language modeling, feature embedding, model optimization
-- **Image Processing**: OpenSlide, Pillow, NumPy, Pandas, data visualization
-- **Deployment**: Linux, Conda, Jupyter Notebook, Git, GitLab, Docker, Flask
-- **R&D Planning**: Technical proposal writing, evaluation support, challenge participation  
+- **Deep Learning & Machine Learning:** PyTorch, TensorFlow, Scikit-learn, torchvision, torchaudio  
+- **Computer Vision & Multimodal AI:** Image analysis, vision-language modeling, feature embedding, model optimization  
+- **Image Processing & Data Handling:** OpenSlide, Pillow, NumPy, Pandas, data visualization  
+- **Development & Deployment Environment:** Linux, Conda, Jupyter Notebook, Git, GitLab, Docker, Flask  
+- **R&D Planning & Evaluation:** Technical proposal writing, evaluation support, challenge participation  
 
 ---
 
@@ -90,8 +113,8 @@
 
 #### 🏆 Awards  
 
-- **Dean's List – Wonkwang Honors Club (2022)**  
-  - Selected as top performer by academic department; given priority for seminars and self-development programs  
+- **Wonkwang Honors Club (2022)**  
+  - Selected as top performer by the department; received priority for seminars and self-development programs  
 
 - **Creative Capstone Design Competition – Honorable Mention (2022)**  
   - Awarded for outstanding IoT-based project design and presentation  
@@ -101,10 +124,10 @@
 ### 📝 Publications  
 
 #### 📘 International Journals (SCI / SCIE)  
-- *A Study on the Lightweight and Fast Response GRU Techniques for Indoor Continuous Motion Recognition Based on Wi-Fi CSI*, **IEEE Access** (2025) – [Citations: 2]  
-- *Human Activity Recognition Based on Continuous-Wave Radar and Bi-directional Gated Recurrent Units*, **Electronics**, 12(19), 4060 (2023) – [Citations: 6]  
-- *Intelligent Mesh Cluster Algorithm for Device-Free Localization in Wireless Sensor Networks*, **Electronics**, 12(16), 3426 (2023) – [Citations: 4]  
-- *Indoor Localization Based on Wi-Fi, Geomagnetic, and Light Sensors on Android Device Using DFF*, **Electronics**, 12(24), 5032 (2023) – [Citations: 2]  
+- *A Study on the Lightweight and Fast Response GRU Techniques for Indoor Continuous Motion Recognition Based on Wi-Fi CSI*, **IEEE Access** (2025) – [Citations: 3]  
+- *Human Activity Recognition Based on Continuous-Wave Radar and Bi-directional Gated Recurrent Units*, **Electronics**, 12(19), 4060 (2023) – [Citations: 7]  
+- *Intelligent Mesh Cluster Algorithm for Device-Free Localization in Wireless Sensor Networks*, **Electronics**, 12(16), 3426 (2023) – [Citations: 5]  
+- *Indoor Localization Based on Wi-Fi, Geomagnetic, and Light Sensors on Android Device Using DFF*, **Electronics**, 12(24), 5032 (2023) – [Citations: 4]  
 
 #### 📙 Domestic Journals (KCI)  
 - *Posture Estimation for Untrained Persons Using a 24GHz FMCW Radar and 2D CNN*, **Journal of the Society of Disaster Information**, 19(4), pp.897–907 (2023) – [Citations: 3]  
@@ -118,4 +141,4 @@
 ---
 
 ### 🔗 Links  
-📂 [My Projects](https://github.com/rudjtr234?tab=repositories)  
+📂 [My Projects](https://github.com/rudjtr234?tab=repositories)

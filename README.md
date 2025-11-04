@@ -23,8 +23,15 @@
 ### 🧑‍💻 Experience  
 
 **AI Research Engineer**  
-**MTS Company, R&D Team – Seoul, Korea**  
+**MTS Company, R&D BIO-DT(Develop Team) – Seoul, Korea**  
 *Jan 2025 – Present*  
+
+- **Thyroid Mutation Prediction Model (BRAF Classification)**
+  - Developed an AI model predicting BRAF V600E mutation in thyroid cancer using H&E WSI pathology images (5000 WSI)
+  - Built a full pipeline: WSI tiling → UNI2-h embedding (1536-dim) → ABMIL classifier (attention-based MIL)
+  - Achieved **AUC 0.89 ± 0.04 and F1-score 0.85 ± 0.05** across 5-fold validation (Bag size = 500–5000)
+  - Designed visualization module for attention heatmaps, highlighting mutation-associated tissue regions
+  - Contributed to the company’s precision pathology initiative for low-cost, non-invasive gene mutation screening
 
 - **Tile-RAG (REG_2025 Challenge)**  
   - Developed **Tile-RAG pipeline** for breast cancer pathology report automation  
@@ -36,9 +43,9 @@
   - Designed and implemented **k-NN retrieval algorithm** for lymph node metastasis prediction (LNMP)  
   - Used **UNI2-h embedding + FAISS k-NN** with quantile thresholding (τ=99.99%) and **5-NN majority voting**  
   - Conducted experiments on **300+ WSI slides**, achieving improved specificity while maintaining recall  
-  - Built **WSI-level overlay heatmaps** for interpretability in pathology AI  
-
-- **Multimodal AI Development (LLaVA-Med, MedGemma)**  
+  - Built **WSI-level overlay heatmaps** for interpretability in pathology AI
+  - 
+- **Multimodal AI Development (LLaVA-Med, MedGemma)** 
   - Researched multimodal AI pipelines integrating pathology images with expert-written reports  
   - Fine-tuned LLaVA-Med and MedGemma on internal datasets for **pathology captioning & QA** prototypes  
   - Built experimental VLM-based pathology report automation systems  
@@ -67,10 +74,10 @@
 
 #### 🛠️ Skills & Tools  
 
-- **Deep Learning**: PyTorch, TensorFlow, torchvision, torchaudio  
-- **Vision-Language Models**: LLaVA, MedGemma, Transformers  
-- **Image Processing**: OpenSlide, Pillow, NumPy, Pandas  
-- **Deployment**: Docker, Flask, Conda, Git  
+- **Deep Learning & Machine Learning**: PyTorch, TensorFlow, Scikit-learn, torchvision, torchaudio
+- **Vision-Language Models**: Image analysis, vision-language modeling, feature embedding, model optimization
+- **Image Processing**: OpenSlide, Pillow, NumPy, Pandas, data visualization
+- **Deployment**: Linux, Conda, Jupyter Notebook, Git, GitLab, Docker, Flask
 - **R&D Planning**: Technical proposal writing, evaluation support, challenge participation  
 
 ---

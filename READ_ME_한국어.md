@@ -28,7 +28,7 @@
 
 ---
 
-#### 🧬 갑상선 BRAF 변이 예측 모델 (Thyroid Mutation Prediction Model)  
+#### 🧬 갑상선 BRAF 변이 예측 모델 (연구 프로젝트)  
 📅 *2025년 10월 ~ 진행 중*  
 
 - H&E 병리 슬라이드(WSI) 이미지를 활용하여 **갑상선암의 BRAF V600E 변이 여부 예측 AI 모델** 개발 (총 5000장 WSI)  

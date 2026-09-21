@@ -82,7 +82,27 @@ Feb 2026 – Present
 
 - Authored final reports for national R&D projects: dataset/model/validation, quantitative metrics (AUC/F1/Acc), experiment design, limitations and mitigation strategies
 - Linked deliverables to MLflow/Redmine/GitLab logs for traceability and audit-ready reproducibility
-- Supported patent filing in digital pathology AI: prior-art review, differentiation points, and drafting key specification sections
+- Drove patent filings in digital pathology AI as first-named inventor: prior-art review, differentiation analysis, and drafting of key specification sections (see Patents)
+
+---
+
+## Patents
+
+**Multiscale MIL Prediction Using Low-Magnification-Guided Patch Importance**
+Filed Apr 2026 · KR 10-2026-0066206 (pending) · First-named inventor
+
+- Maps low-magnification structural features into the high-magnification patch coordinate system to dynamically reweight MIL attention, suppressing background and artifact tiles
+- Selects candidate patches by the derived weighting coefficient, cutting feature-extraction cost on non-informative regions
+- Quantifies agreement between low- and high-magnification predictions, applying a confidence-reinforcement policy (gating-strength retuning, additional patch sampling, review flag) on disagreement
+
+**Generating Virtual Pathology Slides at Future Time Points from Time-Series Slides and Drug Conditions**
+Filed May 2026 · KR 10-2026-0084848 (pending) · First-named inventor
+
+- Encodes foundation-model tile embeddings with temporal and drug-condition vectors via a temporal encoder (Temporal Transformer / TCN) and cross-attention
+- Generates future-timepoint tissue images through a conditional latent diffusion model, enabling counterfactual simulation under altered drug conditions
+- Outputs change heatmaps and sampling-variance-based uncertainty scores for clinical interpretability
+
+*Assignee: MTS Company. Applications pending; specifications not yet laid open.*
 
 ---
 

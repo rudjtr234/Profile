@@ -17,7 +17,7 @@ Seoul, Republic of Korea · wkdrudtjr95@gmail.com
 AI engineer focused on deep learning and medical imaging, especially digital pathology (WSI).
 Building clinically applicable healthcare AI systems that integrate mutation prediction, interpretability (attention heatmaps), and RAG/multimodal pipelines.
 Experienced with Python / PyTorch / TensorFlow / Flask / Docker for research-to-serving workflows.
-Actively exploring foundation models (UNI2-h) and vision-language models (LLaVA-Med, MedGemma).
+Actively working with pathology foundation models (UNI2-h, H-optimus-0/1) and vision-language models (LLaVA-Med, MedGemma).
 Interested in reproducible experiment management (MLflow/Git) and technical documentation (final reports, patents).
 
 ---
@@ -35,18 +35,23 @@ Jan 2025 – Present
 **Thyroid BRAF Mutation Prediction**
 Oct 2025 – Present · [GitHub](https://github.com/rudjtr234/Thyroid_Mutation_Prediction_Model)
 
-- Developed an AI model to predict BRAF V600E mutation from thyroid H&E WSI (5,000 slides)
-- Pipeline: WSI tiling → UNI2-h embeddings (1536-dim) → ABMIL classifier
-- 5-Fold CV: AUC 0.89 ± 0.04, F1 0.85 ± 0.05 (Bag size: 500–5,000)
+- Developed an AI model to predict BRAF V600E mutation from thyroid H&E WSI (4,900 slides)
+- Pipeline: WSI tiling → pathology foundation model embeddings (UNI2-h / H-optimus-0 / H-optimus-1, 1536-dim) → MIL classifier
+- Built a Multi-MIL model zoo (ABMIL / CLAM-SB / DSMIL / ACMIL / TransMIL) and a 5-model probability-averaging ensemble
+- **Internal test: AUC 0.9286, Acc 0.8550** (ABMIL ensemble, H-optimus-0 40x)
+- **External validation on TCGA-THCA (498 WSI): AUC 0.8492** — ensemble improved generalization by +0.041 AUC over the best single model
+- Extracted 108M+ tile embeddings; cut extraction time ~4x by reading WSIs directly instead of pre-tiled PNGs (NFS I/O bottleneck)
 - Designed attention heatmap visualization to highlight mutation-related tissue regions
 - Managed experiments with MLflow and GitLab for reproducibility
 
 **Thyroid TERT Promoter Mutation Prediction**
 Feb 2026 – Present · [GitHub](https://github.com/rudjtr234/Thyroid_TERT_Mutation_Model)
 
-- Developed TERT promoter mutation (Wild vs Mutant) prediction model using 200 thyroid H&E WSIs
-- Pipeline: WSI tiling → UNI2-h embeddings (1536-dim) → Gated ABMIL classifier
-- 5-Fold CV: AUC 0.9699 ± 0.0217, F1 0.9312 ± 0.0221, Acc 0.9404 ± 0.0197
+- Developed TERT promoter mutation prediction model using 201 thyroid H&E WSIs (Wild 113 / C228T 69 / C250T 19)
+- Pipeline: WSI tiling → UNI2-h / H-optimus foundation model embeddings (1536-dim) → Gated ABMIL classifier
+- **5-Fold CV (binary, Wild vs Mutant): best AUC 0.9716** (H-optimus-0 + ABMIL) · **best F1 0.9312 / Acc 0.9404** (UNI2-h + ABMIL)
+- Benchmarked 6 MIL architectures (ABMIL / TransMIL / ACMIL / DTFD / MHIM / CLAM) across three encoders and two magnifications
+- Extended to 3-class classification (Wild / C228T / C250T) to distinguish mutation subtypes
 - Overlaid attention heatmaps on WSI thumbnails for pathology-aware interpretability
 
 **Internal LLM-RAG Pipeline (Redmine / CRF Data)**
@@ -105,7 +110,9 @@ Awards: Wonkwang Honors Club, Creative Capstone Design Competition
 **Digital Pathology / CV**
 
 ![OpenSlide](https://img.shields.io/badge/OpenSlide-4CAF50?style=flat)
-![UNI2-h](https://img.shields.io/badge/UNI2--h_Embedding-8E75B2?style=flat)
+![UNI2-h](https://img.shields.io/badge/UNI2--h-8E75B2?style=flat)
+![H-optimus](https://img.shields.io/badge/H--optimus--0%2F1-6A4C93?style=flat)
+![MIL](https://img.shields.io/badge/Multiple_Instance_Learning-2E7D32?style=flat)
 
 **RAG / Search**
 

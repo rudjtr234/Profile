@@ -82,25 +82,37 @@ Feb 2026 – Present
 
 - Authored final reports for national R&D projects: dataset/model/validation, quantitative metrics (AUC/F1/Acc), experiment design, limitations and mitigation strategies
 - Linked deliverables to MLflow/Redmine/GitLab logs for traceability and audit-ready reproducibility
-- Drove patent filings in digital pathology AI as first-named inventor: prior-art review, differentiation analysis, and drafting of key specification sections (see Patents)
+- Drove 4 patent filings in digital pathology AI as first-named inventor: prior-art review, differentiation analysis, and drafting of key specification sections (see Patents)
 
 ---
 
 ## Patents
 
-**Multiscale MIL Prediction Using Low-Magnification-Guided Patch Importance**
-Filed Apr 2026 · KR 10-2026-0066206 (pending) · First-named inventor
+All four filed as **first-named inventor**, covering MIL reliability, uncertainty-aware decision policies, and generative pathology.
 
-- Maps low-magnification structural features into the high-magnification patch coordinate system to dynamically reweight MIL attention, suppressing background and artifact tiles
-- Selects candidate patches by the derived weighting coefficient, cutting feature-extraction cost on non-informative regions
-- Quantifies agreement between low- and high-magnification predictions, applying a confidence-reinforcement policy (gating-strength retuning, additional patch sampling, review flag) on disagreement
+**Hierarchical MIL with Uncertainty-Based Decision Policy for Gene Mutation Prediction**
+Filed Sep 2026 · KR 10-2026-0180304 (pending)
+
+- Predicts mutation presence, then branches to hotspot subtypes (e.g. TERT C228T / C250T) only when the calibrated probability clears the threshold; abstains as *type-uncertain* when entropy or margin is unreliable
+- Suppresses shortcut learning on co-occurring mutations via a gradient-reversal layer with per-subtype adversarial weights, improving external-cohort generalization
+
+**Biomarker Prediction via Attention-Consensus Dynamic Ensemble**
+Filed Sep 2026 · KR 10-2026-0180301 (pending)
+
+- Weights ensemble members by how far their attention maps agree, so models grounded in the same tissue regions dominate — rather than averaging output probabilities alone
+- Triggers selective re-inference only on uncertain slides, targeting tiles where models disagree (~18% less computation than uniform re-inference)
 
 **Generating Virtual Pathology Slides at Future Time Points from Time-Series Slides and Drug Conditions**
-Filed May 2026 · KR 10-2026-0084848 (pending) · First-named inventor
+Filed May 2026 · KR 10-2026-0084848 (pending)
 
-- Encodes foundation-model tile embeddings with temporal and drug-condition vectors via a temporal encoder (Temporal Transformer / TCN) and cross-attention
-- Generates future-timepoint tissue images through a conditional latent diffusion model, enabling counterfactual simulation under altered drug conditions
-- Outputs change heatmaps and sampling-variance-based uncertainty scores for clinical interpretability
+- Conditions a latent diffusion model on foundation-model tile embeddings plus temporal and drug-condition vectors (Temporal Transformer / TCN, cross-attention)
+- Enables counterfactual simulation of tissue response under altered drug regimens, with change heatmaps and sampling-variance uncertainty
+
+**Multiscale MIL Prediction Using Low-Magnification-Guided Patch Importance**
+Filed Apr 2026 · KR 10-2026-0066206 (pending)
+
+- Maps low-magnification structural features into the high-magnification patch coordinate system to dynamically reweight MIL attention and skip non-informative tiles
+- Detects cross-scale prediction disagreement and applies a confidence-reinforcement policy (gating retune, extra patch sampling, review flag)
 
 *Assignee: MTS Company. Applications pending; specifications not yet laid open.*
 

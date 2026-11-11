@@ -17,7 +17,7 @@ Seoul, Republic of Korea · wkdrudtjr95@gmail.com
 AI engineer focused on deep learning and medical imaging, especially digital pathology (WSI).
 Building clinically applicable healthcare AI systems that integrate mutation prediction, interpretability (attention heatmaps), and RAG/multimodal pipelines.
 Experienced with Python / PyTorch / TensorFlow / Flask / Docker for research-to-serving workflows.
-Actively working with pathology foundation models (UNI2-h, H-optimus-0/1) and vision-language models (LLaVA-Med, MedGemma).
+Actively working with pathology foundation models (UNI2-h, H-optimus-0/1, Hibou-L, Virchow/Virchow2, Midnight) and vision-language models (LLaVA-Med, MedGemma).
 Interested in reproducible experiment management (MLflow/Git) and technical documentation (final reports, patents).
 
 ---
@@ -36,11 +36,13 @@ Jan 2025 – Present
 Oct 2025 – Present · [GitHub](https://github.com/rudjtr234/Thyroid_Mutation_Prediction_Model)
 
 - Developed an AI model to predict BRAF V600E mutation from thyroid H&E WSI (4,900 slides)
-- Pipeline: WSI tiling → pathology foundation model embeddings (UNI2-h / H-optimus-0 / H-optimus-1, 1536-dim) → MIL classifier
+- Pipeline: WSI tiling → pathology foundation model embeddings (UNI2-h / H-optimus-0 / H-optimus-1 / Hibou-L, extending to Virchow2 / GenBio-PathFM) → MIL classifier
 - Built a Multi-MIL model zoo (ABMIL / CLAM-SB / DSMIL / ACMIL / TransMIL) and a 5-model probability-averaging ensemble
 - **Internal test: AUC 0.9286, Acc 0.8550** (ABMIL ensemble, H-optimus-0 40x)
 - **External validation on TCGA-THCA (498 WSI): AUC 0.8492** — ensemble improved generalization by +0.041 AUC over the best single model
+- Benchmarked encoders on identical tiles and folds: internal CV gaps stayed within 0.03 AUC while external TCGA AUC diverged by 0.06–0.15 — made external validation with bootstrap CIs the primary criterion for encoder selection
 - Extracted 108M+ tile embeddings; cut extraction time ~4x by reading WSIs directly instead of pre-tiled PNGs (NFS I/O bottleneck)
+- Built a fault-tolerant DDP extraction pipeline for mixed-GPU nodes (throughput-weighted sharding, per-GPU batch sizes, auto-restart with resume)
 - Designed attention heatmap visualization to highlight mutation-related tissue regions
 - Managed experiments with MLflow and GitLab for reproducibility
 
@@ -48,11 +50,22 @@ Oct 2025 – Present · [GitHub](https://github.com/rudjtr234/Thyroid_Mutation_P
 Feb 2026 – Present · [GitHub](https://github.com/rudjtr234/Thyroid_TERT_Mutation_Model)
 
 - Developed TERT promoter mutation prediction model using 201 thyroid H&E WSIs (Wild 113 / C228T 69 / C250T 19)
-- Pipeline: WSI tiling → UNI2-h / H-optimus foundation model embeddings (1536-dim) → Gated ABMIL classifier
+- Pipeline: WSI tiling → UNI2-h / H-optimus-0/1 / Hibou-L foundation model embeddings → Gated ABMIL classifier
 - **5-Fold CV (binary, Wild vs Mutant): best AUC 0.9716** (H-optimus-0 + ABMIL) · **best F1 0.9312 / Acc 0.9404** (UNI2-h + ABMIL)
-- Benchmarked 6 MIL architectures (ABMIL / TransMIL / ACMIL / DTFD / MHIM / CLAM) across three encoders and two magnifications
+- Benchmarked 6 MIL architectures (ABMIL / TransMIL / ACMIL / DTFD / MHIM / CLAM) across four encoders and two magnifications
+- Quantified model-selection bias: choosing runs by test AUC inflated results by +0.013 AUC on average versus validation-based selection — larger than the 0.010 spread across encoders; redesigning the protocol around validation-based selection, fold-level CIs and significance tests
 - Extended to 3-class classification (Wild / C228T / C250T) to distinguish mutation subtypes
+- Built multi-GPU sweep tooling (per-GPU run queues, overwrite protection, GPU index pinning) to parallelize hyperparameter sweeps
 - Overlaid attention heatmaps on WSI thumbnails for pathology-aware interpretability
+
+**Gastric Biopsy Grading — Updated Sydney System**
+Oct 2026 – Present
+
+- Building a multi-task MIL pipeline that grades five Updated Sydney items (H. pylori, neutrophils, mononuclear cells, atrophy, intestinal metaplasia; grade 0–3) from gastric biopsy H&E WSI
+- Pipeline: iSyntax → TIFF conversion → TRIDENT tissue segmentation and patching → embeddings from four foundation models (Hibou-L / H-optimus-0 / Virchow / Midnight-12k) at 10x / 20x / 40x → multi-task attention MIL
+- Re-implemented SydneyMTL (shared adaptor, per-item attention heads, logit-adjusted cross entropy) and extended it with biopsy-site conditioning (logit bias / FiLM)
+- Implemented multi-label iterative stratification to balance rare grades across folds; all encoders and magnifications share identical splits for paired-fold comparison
+- Enforced reproducibility with versioned runs that refuse to start when config, label, or code hashes differ, with automatic MLflow logging
 
 **Internal LLM-RAG Pipeline (Redmine / CRF Data)**
 Nov 2025 – Present · [GitHub](https://github.com/rudjtr234/redmine_RAG)
@@ -144,6 +157,7 @@ Awards: Wonkwang Honors Club, Creative Capstone Design Competition
 ![OpenSlide](https://img.shields.io/badge/OpenSlide-4CAF50?style=flat)
 ![UNI2-h](https://img.shields.io/badge/UNI2--h-8E75B2?style=flat)
 ![H-optimus](https://img.shields.io/badge/H--optimus--0%2F1-6A4C93?style=flat)
+![TRIDENT](https://img.shields.io/badge/TRIDENT-5C6BC0?style=flat)
 ![MIL](https://img.shields.io/badge/Multiple_Instance_Learning-2E7D32?style=flat)
 
 **RAG / Search**

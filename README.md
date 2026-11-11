@@ -1,5 +1,7 @@
 # KyongSeok Jang (장경석)
 
+**English** · [한국어](https://github.com/rudjtr234/Profile/blob/main/README.ko.md)
+
 **AI Research Engineer | Digital Pathology · Medical AI · Multimodal / RAG**
 
 Seoul, Republic of Korea · wkdrudtjr95@gmail.com
@@ -25,7 +27,7 @@ Interested in reproducible experiment management (MLflow/Git) and technical docu
 ## Experience
 
 **AI Research Engineer**
-MTS Company, R&D BIO-DT · Seoul
+MTS Company, R&D AI-DT · Seoul
 Jan 2025 – Present
 
 ---
@@ -61,11 +63,13 @@ Feb 2026 – Present · [GitHub](https://github.com/rudjtr234/Thyroid_TERT_Mutat
 **Gastric Biopsy Grading — Updated Sydney System**
 Oct 2026 – Present · [GitHub](https://github.com/rudjtr234/sydney_public)
 
-- Building a multi-task MIL pipeline that grades five Updated Sydney items (H. pylori, neutrophils, mononuclear cells, atrophy, intestinal metaplasia; grade 0–3) from gastric biopsy H&E WSI
+- Developing a multi-task MIL model that grades all five Updated Sydney items (H. pylori, neutrophils, mononuclear cells, atrophy, intestinal metaplasia; grade 0–3) from gastric biopsy H&E WSI (998 cases / 1,002 slides)
 - Pipeline: iSyntax → TIFF conversion → TRIDENT tissue segmentation and patching → embeddings from four foundation models (Hibou-L / H-optimus-0 / Virchow / Midnight-12k) at 10x / 20x / 40x → multi-task attention MIL
 - Re-implemented SydneyMTL (shared adaptor, per-item attention heads, logit-adjusted cross entropy) and extended it with biopsy-site conditioning (logit bias / FiLM)
-- Implemented multi-label iterative stratification to balance rare grades across folds; all encoders and magnifications share identical splits for paired-fold comparison
-- Enforced reproducibility with versioned runs that refuse to start when config, label, or code hashes differ, with automatic MLflow logging
+- **5-fold CV: mean QWK 0.602** (H-optimus-0, 20x) · intestinal metaplasia QWK 0.902
+- Benchmarked 4 encoders × 3 magnifications on identical folds: mean QWK stayed within 0.575–0.608, while per-item difficulty varied far more (atrophy 0.27–0.34 vs intestinal metaplasia 0.88–0.90 at 20x)
+- Traced atrophy errors to the grade 2/3 boundary rather than biopsy site — site conditioning gave no consistent gain, pointing to ordinal losses as the next step
+- Implemented multi-label iterative stratification to balance rare grades across folds, and versioned runs that refuse to start when config, label, or code hashes differ (automatic MLflow logging)
 
 **Internal LLM-RAG Pipeline (Redmine / CRF Data)**
 Nov 2025 – Present · [GitHub](https://github.com/rudjtr234/redmine_RAG)

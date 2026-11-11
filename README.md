@@ -59,7 +59,7 @@ Feb 2026 – Present · [GitHub](https://github.com/rudjtr234/Thyroid_TERT_Mutat
 - Overlaid attention heatmaps on WSI thumbnails for pathology-aware interpretability
 
 **Gastric Biopsy Grading — Updated Sydney System**
-Oct 2026 – Present
+Oct 2026 – Present · [GitHub](https://github.com/rudjtr234/sydney_public)
 
 - Building a multi-task MIL pipeline that grades five Updated Sydney items (H. pylori, neutrophils, mononuclear cells, atrophy, intestinal metaplasia; grade 0–3) from gastric biopsy H&E WSI
 - Pipeline: iSyntax → TIFF conversion → TRIDENT tissue segmentation and patching → embeddings from four foundation models (Hibou-L / H-optimus-0 / Virchow / Midnight-12k) at 10x / 20x / 40x → multi-task attention MIL
